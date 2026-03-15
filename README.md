@@ -55,3 +55,19 @@ Consumer-360-Retail-Analytics
 ## Conclusion
 
 This project demonstrates how SQL, Python, and Power BI can be combined to transform raw retail data into actionable insights. By analyzing customer purchase patterns and segmenting customers using RFM analysis, businesses can better understand their customers and make data-driven decisions.
+## Dataset
+
+The dataset used in this project is the **Online Retail Dataset**, which contains transactional data from a UK-based online retail store.
+
+Dataset source:  
+https://archive.ics.uci.edu/ml/datasets/Online+Retail
+
+The dataset includes the following features:
+- Invoice Number
+- Stock Code (Product ID)
+- Description
+- Quantity
+- Invoice Date
+- Unit Price
+- Customer ID
+- Country
