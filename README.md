@@ -71,3 +71,9 @@ The dataset includes the following features:
 - Unit Price
 - Customer ID
 - Country
+
+The outputs of each development stage are provided as PDF documents in this repository:
+
+• SQL_Output.pdf – Contains screenshots of SQL schema creation, data cleaning, and optimized queries.
+• Python_Output.pdf – Includes RFM segmentation results and Market Basket Analysis outputs generated using Python.
+• PowerBI_Output.pdf – Shows the final Power BI dashboard with KPIs, RFM customer segments, and product association insights.
