@@ -1,0 +1,24 @@
+import pandas as pd
+
+# Load dataset
+data = pd.read_csv("../Dataset/OnlineRetail.csv")
+
+# Remove rows with missing CustomerID
+data = data.dropna(subset=['CustomerID'])
+
+# Create revenue column
+data["Revenue"] = data["Quantity"] * data["UnitPrice"]
+
+# Convert date column
+data["InvoiceDate"] = pd.to_datetime(data["InvoiceDate"])
+
+# RFM Calculation
+rfm = data.groupby("CustomerID").agg({
+    "InvoiceDate": lambda x: (data["InvoiceDate"].max() - x.max()).days,
+    "InvoiceNo": "count",
+    "Revenue": "sum"
+})
+
+rfm.columns = ["Recency", "Frequency", "Monetary"]
+
+print(rfm.head())
